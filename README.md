@@ -14,3 +14,5 @@ In order to run this project you need to have Nodejs at least v20
 10. open the second console in the main directory and run npm run dev
 11. in the first console write node Availability.js
 12. the last thing is to open mongodb and set isAdmin from false to true for your made user account   
+13. npm run build in client directory to create build version
+14. npm run client and npm run server for builded version (or just npm run dev)

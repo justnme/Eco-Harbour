@@ -6,12 +6,14 @@ import Forum from './Models/forumModel.js'
 import Fish from './Models/fishModel.js'
 import MRA from './Models/MRAModel.js'
 import Harbour from './Models/harbourModel.js'
+import Reward from './Models/rewardModel.js';
 
 import users from './data/User.js'
 import fishes from './Data/Fish.js' 
 import forum from './Data/Forum.js'
 import mra from './Data/MRA.js'
 import harbour from './Data/Harbours.js'
+import reward from './Data/Reward.js';
 
 import connectDB from './Config/db.js'
 
@@ -25,12 +27,15 @@ const importData = async () => {
         await Forum.deleteMany()
         await MRA.deleteMany()
         await Harbour.deleteMany()
+        await Reward.deleteMany();
 
-        const createUser = await Users.insertMany(users)
-        const fishSpecies = await Fish.insertMany(fishes)
-        const forumpost = await Forum.insertMany(forum)
-        const mra_area = await MRA.insertMany(mra)
-        const harbours =  await Harbour.insertMany(harbour)
+        await Users.insertMany(users);
+        await Fish.insertMany(fishes);
+        await Forum.insertMany(forum);
+        await MRA.insertMany(mra);
+        await Harbour.insertMany(harbour);
+        await Reward.insertMany(reward);
+
 
         console.log('Data Inserted')
         process.exit()

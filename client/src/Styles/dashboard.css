@@ -56,7 +56,7 @@
 
 #logout button{
     margin: 35px;
-    font-size: 24px;
+    font-size: 20px;
     width: 60%;
     height: 35px;
 }
@@ -79,7 +79,7 @@
 
 .content h1{
     margin: 15px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .content svg {
@@ -110,7 +110,7 @@
     color: white;
     text-align: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .box-icon {
@@ -124,7 +124,7 @@
 }
 
 .box-content h2{
-    font-size: 55px;
+    font-size: 25px;
     padding: 10px 0px 0px 10px;
 }
 
@@ -144,7 +144,7 @@
 }
 
 #sails h2{
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Popins';
     padding-bottom: 10px;
 }
@@ -325,7 +325,7 @@
     width: 60%;
     margin: 0px auto;
     height: 30px;
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
     padding-top: 5px;
 }

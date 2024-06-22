@@ -32,7 +32,7 @@
 
 .admin-nav svg {
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 16px;
     margin-right: 10px;
 }
 
@@ -57,14 +57,14 @@
 
 #logout button {
     margin: 0px 40px;
-    font-size: 24px;
+    font-size: 20px;
     width: 60%;
     height: 35px;
 }
 
 #logout svg {
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 16px;
     margin-right: 10px;
 }
 
@@ -84,7 +84,7 @@
 .verify-document h1, 
 .manage-users h1 {
     margin: 15px;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .admin-content svg {
@@ -99,7 +99,7 @@
     color: white;
     text-align: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .view {
@@ -109,7 +109,7 @@
 }
 
 .view svg {
-    font-size: 20px;
+    font-size: 16px;
     vertical-align: middle;
 }
 
@@ -128,7 +128,7 @@
 .approve svg, 
 .reject svg {
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .image-viewer {
@@ -153,7 +153,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -173,7 +173,7 @@
     margin: 5px 0px 0px 25px;
     height: 35px;
     width: 12%;
-    font-size: 30px;
+    font-size: 18px;
     padding: 5px;
     background-color: #35967b;
     border-radius: 10px;
@@ -183,14 +183,14 @@
     margin: 5px 0px 0px 25px;
     height: 35px;
     width: 15%;
-    font-size: 30px;
+    font-size: 18px;
     padding: 5px;
     background-color: #e63d3d;
     border-radius: 10px;
 }
 
 .search-btn svg{
-    font-size: 20px;
+    font-size: 16px;
     vertical-align: middle;
     margin-left: 12px;
 }

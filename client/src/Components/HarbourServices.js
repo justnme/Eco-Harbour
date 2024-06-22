@@ -26,14 +26,14 @@ const HarbourServices = () => {
         const { data } = await axios.get(`/abundance/fish/${fishId}`);
 
         const highAbundance = data.filter((item) => item.abundance === "high")
-        const mediumAbundance = data.filter((item) =>  item.abundance === "medium")
-        const lowAbundance = data.filter((item) => item.abundance === "low")
+        // const mediumAbundance = data.filter((item) =>  item.abundance === "medium")
+        // const lowAbundance = data.filter((item) => item.abundance === "low")
         
         const states = []
         
         highAbundance.map((item) => states.push(item.state))
-        mediumAbundance.map((item) => states.push(item.state))
-        lowAbundance.map((item) => states.push(item.state))
+        // mediumAbundance.map((item) => states.push(item.state))
+        // lowAbundance.map((item) => states.push(item.state))
 
         const harbour_records = states.map(async (state) => {
           try {
@@ -72,19 +72,19 @@ const HarbourServices = () => {
       try {
         const { data } = await axios.get(`/abundance/state/${state}`)
 
-        const mediumAbundance = data.filter((item) => item.abundance === 'medium ').slice(0, 5);
+        // const mediumAbundance = data.filter((item) => item.abundance === 'medium ').slice(0, 5);
         const highAbundance = data.filter((item) =>  item.abundance === 'high').slice(0, 5);
-        const lowAbundance = data.filter((item) =>  item.abundance === 'low').slice(0, 5);
+        // const lowAbundance = data.filter((item) =>  item.abundance === 'low').slice(0, 5);
 
         const fishIds = []
 
-        mediumAbundance.forEach((element) => {
-          fishIds.push(element.fishId)
-        });
+        // mediumAbundance.forEach((element) => {
+        //   // fishIds.push(element.fishId)
+        // });
 
-        lowAbundance.forEach((element) => {
-          fishIds.push(element.fishId)
-        });
+        // lowAbundance.forEach((element) => {
+        //   // fishIds.push(element.fishId)
+        // });
 
         highAbundance.forEach((element) => {
           fishIds.push(element.fishId)

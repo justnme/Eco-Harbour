@@ -7,7 +7,8 @@ import axios from 'axios'
 dotenv.config()
 connectDB()
 
-const workbook = xlsx.readFile('D:\\Web Development\\Eco-Harbour\\Docs\\Datasets\\Abundance.xlsx');
+// change to your local path
+const workbook = xlsx.readFile('E:\\eco\\Eco-Harbour\\Docs\\Datasets\\Abundance.xlsx');
 
 const sheetName = workbook.SheetNames[1];
 const worksheet = workbook.Sheets[sheetName];

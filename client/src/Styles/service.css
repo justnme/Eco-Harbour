@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     background-color: #7fc8a9;
     color: #fff;
     height: 30vh;
@@ -60,9 +60,9 @@
 }
 
 #servicepage label{
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: 'Karule';
-    padding: 10px;
+    padding: 7px;
 }
 
 #servicepage input{
@@ -120,7 +120,7 @@
 
 #product h2 {
     color: #088178;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 #product h4{
@@ -176,7 +176,7 @@
 }
 
 #product .pro button svg{
-    font-size: 25px;
+    font-size: 20px;
     vertical-align: middle;
     margin: 0px;
     color: #fff;
