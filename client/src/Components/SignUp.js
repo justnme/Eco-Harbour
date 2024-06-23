@@ -5,32 +5,32 @@ import { toast } from 'react-toastify'
 
 const SignUp = () => {
   const navigate = useNavigate()
-  
+
   const handelClick = async () => {
-    const email = document.getElementById('email').value
-    
-    try {
-      const { data } = await axios.get('/user/profile')
-      if(data._id){
-        const { response } = await axios.post('', email)
-        toast.success("Email Recorded Successfully")
-      }
-    } catch (error) {
-      if(error.response.data.message === "Unauthorized User, No Token"){
-        toast.warning("Please Login Before Register")
-        navigate('/login')
-      }
-      if(error.response.data.message === "Not Found - /"){
-        toast.success("Email Recorded Successfully")
-      }
-      if(error.response.data.message === "Error in Sail"){
-        toast.error("Error in Sail")
-      }
-      else{
-        console.log(error)
-      }
-    }
-  }
+		const email = document.getElementById('email').value;
+
+		try {
+			const { data } = await axios.get('/user/profile');
+			if (data._id) {
+				await axios.post('/sendEmail', { email });
+				toast.success("Email Recorded Successfully");
+			}
+		} catch (error) {
+			const message = error.response?.data?.message;
+			if (message === "Unauthorized User, No Token") {
+				toast.warning("Please Login Before Register");
+				navigate('/login');
+			} else if (message === "Not Found - /") {
+				toast.success("Email Sent Successfully");
+			} else if (message === "Error in Sail") {
+				toast.error("Error in mail");
+			} else {
+				console.log(error);
+				toast.error("An error occurred.");
+			}
+		}
+	};
+
 
   return (
     <section id='signup'>
